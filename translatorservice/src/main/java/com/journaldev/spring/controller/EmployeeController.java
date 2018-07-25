@@ -73,6 +73,7 @@ public class EmployeeController {
 		return emp;
 	}
 	
+	// Translation api
 	@RequestMapping(value = "/rest/emp/translation", method = RequestMethod.POST)
 	public @ResponseBody TranslationObject getTranslation(@RequestBody TranslationObject trans) {
 		logger.info("Starting translations");
